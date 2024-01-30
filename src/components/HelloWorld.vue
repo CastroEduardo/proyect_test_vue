@@ -11,8 +11,9 @@ import { JsonDemo } from "../models/models_demo";
 const model1:JsonDemo = {
   userId: 100,
     id: 200,
-    title: "Titulo",
+    title: "Titulo",    
     completed: false,
+    data:"sd"
     data:"sd"
 
 }
