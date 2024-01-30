@@ -1,5 +1,5 @@
 <template>
-  <h1>{{model1.title}}</h1>
+  <h1>{{model1}}</h1>
 </template>
 
 
@@ -22,7 +22,7 @@ const model1:JsonDemo = {
 <style scoped>
 
 h1{
- 
+ color: blue;
 }
 </style>
 

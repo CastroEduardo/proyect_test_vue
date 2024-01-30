@@ -1,12 +1,25 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
 
-<template>
- 
-  <HelloWorld />
+
+<template> 
+ <HelloWorld msg="Vite + Vue" />
+ <h1>{{model1}}</h1>
+ <h1> Hola {{ miNombre  }} y tendre {{ miEdad+1 }}</h1>
 </template>
 
+<script setup lang="ts">
+import { JsonDemo } from "./models/models_demo";
+
+const model1:JsonDemo = {
+  userId: 100,
+    id: 200,
+    title: "Titulo",
+    completed: false,
+    data:"sd"
+
+}
+const miNombre= "Jab"
+const miEdad=18
+</script>
 <style scoped>
 .logo {
   height: 6em;
