@@ -2,7 +2,7 @@
 
 <template> 
  <HelloWorld msg="Vite + Vue" />
- <h1>{{model1}}</h1>
+ <h1 v-bind:style="miColor">{{model1}}</h1>
  <h1> Hola {{ miNombre  }} y tendre {{ miEdad+1 }}</h1>
 </template>
 
@@ -19,6 +19,7 @@ const model1:JsonDemo = {
 }
 const miNombre= "Jab"
 const miEdad=18
+const miColor="color:green;font-size:3em"
 </script>
 <style scoped>
 .logo {
