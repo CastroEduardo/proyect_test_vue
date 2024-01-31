@@ -1,5 +1,5 @@
 <template> 
-  <h1 :class="selector">{{model1.id}}</h1>
+  <h1 :class="selector">{{model1[1].title}}</h1>
   <h1>Hola {{ miNombre  }} y tendre {{ miEdad+1 }}</h1>
   <button @click="saludar(miNombre)">Entrar </button>
   <button @click="decremento">-</button>
@@ -14,7 +14,7 @@
  <script setup lang="ts">
  import { JsonDemo } from "./models/models_demo";
  
- const model1:JsonDemo = {
+ const model1:JsonDemo = [{
    userId: 100,
      id: 200,
      title: "Titulo",
@@ -22,9 +22,18 @@
      data:"sd",
      web:"https://yt3.ggpht.com/s4cUbevAGAhSoDDF5pJHTeSKepSOkdJB2IhnebmuK5nIXz3sRa2FIXZom9sEjtrkYA2zOYHByyQ=s48-c-k-c0x00ffffff-no-rj"
  
- }
+ },
+ {
+   userId: 150,
+     id: 250,
+     title: "Valores",
+     completed: true,
+     data:"sdx",
+     web:"https://yt3.ggpht.com/s4cUbevAGAhSoDDF5pJHTeSKepSOkdJB2IhnebmuK5nIXz3sRa2FIXZom9sEjtrkYA2zOYHByyQ=s48-c-k-c0x00ffffff-no-rj"
  
- const imagen1= model1.web;
+ }]
+ 
+ const imagen1= model1[1].web;
  import {computed,ref}  from "vue";
  let contador=ref(0);
  let miColor= ref("text_color");
