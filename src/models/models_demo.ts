@@ -4,6 +4,7 @@ export interface JsonDemo {
     title: string
     completed: boolean
     data:string
+    web:string
 
   }
   
